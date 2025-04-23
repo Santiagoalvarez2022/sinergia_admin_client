@@ -1,0 +1,23 @@
+.listTable{
+}
+
+.listTable::-webkit-scrollbar {
+    width: 8px;  /* Ancho de la barra vertical */
+    height: 8px; /* Ancho de la barra horizontal */
+}
+/* Fondo de la barra */
+.listTable::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color de fondo */
+  border-radius: 10px;
+}
+
+/* Color del "pulgar" (la parte que se arrastra) */
+.listTable::-webkit-scrollbar-thumb {
+  background: var(--color-principal); /* Color de la barra */
+  border-radius: 10px;
+}
+
+/* Cambio de color al pasar el mouse */
+.listTable::-webkit-scrollbar-thumb:hover {
+  background: #06474C;
+}

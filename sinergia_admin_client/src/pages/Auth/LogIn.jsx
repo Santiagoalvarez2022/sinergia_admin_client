@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import { sendLogIn } from '../../api/service/Auth';
 import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../../context/AuthContext';
 
 export default function LogIn() {
     const navigate = useNavigate()
+    const {logInProvider} = useAuth()
     const [form,setForm] = useState({
         username : '',
         password : ''
@@ -22,6 +24,7 @@ export default function LogIn() {
         try {
             let response = await sendLogIn(form)
             if (response.status === 200) {
+                logInProvider()
                 navigate('/panel')
             }
         } catch (error) {
