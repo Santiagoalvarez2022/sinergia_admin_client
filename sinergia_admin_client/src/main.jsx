@@ -8,7 +8,7 @@ import MainLayout from './layout/MainLayout.jsx'
 import { AuthProvider } from './context/AuthContext.jsx'
 import Admin from './pages/Admin/Admin.jsx'
 import AdminBlogs from './pages/Admin/AdminBlogs.jsx'
-import CreateBlog from './pages/CreateBlog.jsx'
+import CreateBlog from './pages/CreateBlog/CreateBlog.jsx'
 
 let router = createBrowserRouter([
   {
