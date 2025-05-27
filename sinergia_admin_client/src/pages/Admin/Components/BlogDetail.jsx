@@ -40,7 +40,7 @@ export default function BlogDetail({blog, closeModal, handlerLoader}) {
                
             </div>
 
-            <p className='h-[50vh]  my-2 overflow-auto p-4'>{text}</p> 
+            <p className='h-[50vh]  my-2 overflow-auto p-4' dangerouslySetInnerHTML={{ __html: text }}></p> 
 
             <div className='flex justify-end my-2 text-md  px-8'>
                     {

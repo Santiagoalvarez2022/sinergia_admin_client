@@ -89,8 +89,6 @@ export default function CreateBlog() {
     )
   }
   
-  console.log(form, '<====');
-  
   return (
     <div className='min-h-screen flex justify-center items-start  px-4 bg-bg '>
       <div className='mt-10 flex flex-col shadow-md shadow-black/20 flex items-start justify-center w-full rounded-md px-4 pb-4  md:w-[50%] lg:w-[30%]'>
@@ -116,7 +114,6 @@ export default function CreateBlog() {
         </div>
         
         <SelectCategories handlerForm={handlerForm} />
-        
         {
           !Object.keys(error).length && <div className='w-full flex justify-end'>
             <button onClick={()=>sendNewBlog()} className='bg-principal text-bg px-4 py-1 rounded-md '>Enviar</button>
