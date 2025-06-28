@@ -17,7 +17,7 @@ export default function Menu({handlerSelected}) {
 
     const menus = [
       {title : 'Usarios', Link : '/panel'},
-      {title : 'Articulos', Link : '/panel/blogs'},
+      {title : 'Artículos', Link : '/panel/blogs'},
       {title : 'Estadisticas', Link : '/panel'},
 
     ]

@@ -1,4 +1,3 @@
-import React from 'react'
 function StatisticsItem ({data}){
     const {title,count} = data;
  

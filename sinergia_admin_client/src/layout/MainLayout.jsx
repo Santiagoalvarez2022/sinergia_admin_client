@@ -2,10 +2,10 @@ import React, { useEffect } from 'react'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import { useAuth } from '../context/AuthContext.jsx';
-import { useNavigate } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
 import { checkLogin } from '../api/service/Auth.js';
 
-export default function MainLayout({children}) {
+export default function MainLayout() {
   const {isLogin, logInProvider } = useAuth();
   const navigate = useNavigate()
 
@@ -34,7 +34,9 @@ export default function MainLayout({children}) {
   return (
     <div>
         <Header />
-        <main>{children}</main>
+          <main>
+            <Outlet />
+          </main>
         <Footer />
     </div>
   )

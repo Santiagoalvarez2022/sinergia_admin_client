@@ -1,13 +1,14 @@
-import React, { useState } from 'react'
-import Menu from './Components/Menu'
-import Statistics from './Components/Statistics.jsx'
+import Menu from '../sinergia/Components/Menu.jsx'
+import Statistics from '../../components/Statistics/Statistics.jsx'
+import ButtonSquare from '../../components/MenuOptionsSquare/ButtonSquare.jsx'
+import { buttonsOptions } from './optionsButtons.jsx'
+import MenuOptionsSquare from '../../components/MenuOptionsSquare/MenuOptionsSquare.jsx'
+
 
 export default function Admin() {
- 
-    const handlerSelected = () =>{}
-    return (
-    <div className='bg-white h-[100vh] overflow-auto flex flex-col items-center'>
-      <Menu handlerSelected={handlerSelected} />
+  return (
+    <div className='bg-bg h-[100vh] pt-4'>
+        <MenuOptionsSquare arrayOptions={buttonsOptions}/>
     </div>
   )
 }
